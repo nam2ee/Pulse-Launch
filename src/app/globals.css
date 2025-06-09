@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Toast Styling removed */
+
+/* Custom react-toastify Styling */
+.glass-toast {
+  background: rgba(30, 41, 59, 0.7); /* Semi-transparent dark background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border: 1px solid rgba(99, 102, 241, 0.3); /* Subtle indigo border */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border-radius: 12px !important; /* Rounded corners (important might be needed to override defaults) */
+  color: #ededed !important; /* Light text color */
+  padding: 16px !important;
+}
+
+/* Style for the text content if needed */
+.glass-toast-body {
+  color: #ededed !important; /* Ensure body text is light */
+  font-size: 1rem; /* Adjust font size if needed */
+}
+
+/* Ensure default icons use light color too (might vary based on toast type) */
+.Toastify__toast-icon svg {
+  fill: #ededed;
+}
