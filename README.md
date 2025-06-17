@@ -88,12 +88,57 @@ Window에서는, 우선 다음 사이트로 접속한다.
 
 ![image](https://github.com/user-attachments/assets/511a0413-0fc6-43cc-9042-703ed2e86f2e)
 
-이렇게 node v23.9.0 이 적용된다! 
+이렇게 node v23.9.0 이 적용된다! (확인은 `node -v`)
 
 
+### (2) Linux ver(Ubuntu).
+
+`sudo apt update` 를 통해서 패키지를 최신 상태로 업데이트 한 뒤, 
+`sudo apt install -y curl build-essential libssl-dev` 를 통해 필요한 필수 컴파일러등을 설치한다. 
+
+주의: Snap으로 설치된 curl이나 git-core가 충돌을 일으킬 수 있으므로, 문제가 발생하면 `sudo snap remove curl` 후 `sudo apt install curl git-core`로 다시 설치
+
+그리고 이제 본격적으로 NVM 설치에 들어간다. 
+`curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.39.0/install.sh | bash` -> 공식 설치 스크립트. 
+
+이후
+`source ~/.bashrc` 를 실행시켜, 터미널을 소싱하여, 환경변수를 설정한다.
+
+설치 확인: `command -v nvm`
+
+이후  git clone을 받은 폴더에서, 
+`nvm install 23.9.0`를 수행한다. 
+그 후, 
+`nvm use 23.9.0`을 수행한다.
+
+이후 확인은 `node -v`
 
 
+### (3) Mac ver
+
+`xcode-select --install` 를 통해 CLT를 설치 한 뒤, 
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` 를 통해 homebrew를 설치한다. 
+
+그리고 이제 본격적으로 NVM 설치에 들어간다. 
+`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash` -> 공식 설치 스크립트. 
+
+이후
+Zsh를 사용 중이라면 ~/.zshrc에, Bash라면 ~/.bashrc나 ~/.bash_profile에 다음 줄이 자동으로 추가됐는지 확인(`/Users/<사용자이름>/.zshrc`에 있으므로, `/Users/<사용자이름>` 에서 편집기를 열어서 확인. ) - 만일 오류가 날 시 해당 사항이 비어있을 확률이 있어서, 오류가 난다면 수동으로 추가한다.
+`export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"`
+ 
+이후 쉘 로드 
+`source ~/.zshrc`
 
 
+설치 확인: `command -v nvm`
+
+이후  git clone을 받은 폴더에서, 
+`nvm install 23.9.0`를 수행한다. 
+그 후, 
+`nvm use 23.9.0`을 수행한다.
+
+이후 확인은 `node -v`
 
 
+### 3. Next.js 실행하기 
