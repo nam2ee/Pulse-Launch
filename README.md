@@ -126,6 +126,7 @@ Window에서는, 우선 다음 사이트로 접속한다.
 Zsh를 사용 중이라면 ~/.zshrc에, Bash라면 ~/.bashrc나 ~/.bash_profile에 다음 줄이 자동으로 추가됐는지 확인(`/Users/<사용자이름>/.zshrc`에 있으므로, `/Users/<사용자이름>` 에서 편집기를 열어서 확인. ) - 만일 오류가 날 시 해당 사항이 비어있을 확률이 있어서, 오류가 난다면 수동으로 추가한다.
 
 export NVM_DIR="$HOME/.nvm"
+
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
  
 이후 쉘 로드 
