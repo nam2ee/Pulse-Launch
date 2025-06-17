@@ -74,6 +74,7 @@ Window에서는, 우선 다음 사이트로 접속한다.
 전부 다 Next. 
 
 이것도 다 디폴트로 설정해놓고 Next
+
 ![image](https://github.com/user-attachments/assets/4e2334b2-10bb-4063-acd8-f53b8fb2441b)
 
 깔렸는지 확인하고, nvm -v가 안 먹히면 터미널 껐다 키기도 방법.
