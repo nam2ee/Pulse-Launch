@@ -16,7 +16,7 @@ Project는 랜딩페이지, Technical product (Core 기능 있음), Launching pa
 
 ### 1. Phantom wallet 설치 
 
-#### (1) Chrome
+#### (1) Chrome 
 [Phantom wallet](https://phantom.com/) 이 링크로 들어가서 
 
 ![image](https://github.com/user-attachments/assets/5a439ef7-a8e5-447c-a6ff-8a51f63e0d84)
@@ -144,7 +144,7 @@ export NVM_DIR="$HOME/.nvm"
 이후 확인은 `node -v`
 
 
-### 3. Next.js 실행하기 
+### 3. 실행하기 
 
 작업 디렉토리에서 
 `git clone https://github.com/nam2ee/Pulse-Launch.git`를 수행한 뒤,
@@ -161,6 +161,35 @@ export NVM_DIR="$HOME/.nvm"
 
 그렇게 되면 다음과 같은 화면이 나온다. (좌측 하단에 있는 것은 로컬에서 돌려서 발생하는 오류이므로 무시하면 된다.)
 
-![image](https://github.com/user-attachments/assets/425d4123-bf90-429b-9c2a-66958d704b8a)
-![image](https://github.com/user-attachments/assets/425d4123-bf90-429b-9c2a-66958d704b8a)
+![image](https://github.com/user-attachments/assets/ffbdebd2-d94e-407c-b8a9-75e40f320501)
+
+위의 사진에서, Join Campaign이라는 버튼을 누르고 `localhost:3000/pulse`로 들어간다. 이 때, 버튼이 한번 눌러서는 잘 안될 수 있으므로 두번이나 세번 쯤 눌러보자. 
+
+그렇게 넘어오고 나서 맨 위로 스크롤을 올리면 다음과 같은 Select Wallet이라는 버튼이 나온다. 
+
+![image](https://github.com/user-attachments/assets/7bfda515-8778-4afe-9245-e31cb7171e63)
+
+잘 눌러보면 
+
+![image](https://github.com/user-attachments/assets/6bf0faf7-893f-4328-92d4-b2505793980c)
+
+아까 깔았던 Phantom이 나오고, 우리는 그것을 선택하면 된다. (아마 비밀번호 치는 칸이 나올 것이다.
+
+연결을 누르면 된다. (브라우저랑 오버랩되니까, 해당 탭을 잃어버리지 말고 잘 연결을 누를 것) 
+
+![image](https://github.com/user-attachments/assets/2353121b-59ff-4f9c-aae3-976b46479245)
+
+그렇게 연결이 잘 되고 나서야, 이제 우리는 댓글(컨텐츠)를 쓸 수 있다. (주의: **컨텐츠는 영어로 써야함!**)
+
+![image](https://github.com/user-attachments/assets/96639c14-0483-44c5-ad27-95cf9aab1052)
+
+그렇게 댓글을 적어두고 Submit Post 버튼을 누르게 되면, 상단으로 스크롤 되면서 타이머는 초기화되고, 다음과 같은 팝업이 뜬다.
+
+![image](https://github.com/user-attachments/assets/74d74eef-5e7f-4b0b-8db5-c04fd7ff001e)
+
+이때, Post on X!를 **트위터 로그인이 된 상태로** 누른다면, 트위터의 특정 게시물의 Reply가 자동으로 내가 방금 올린 컨텐츠의 내용을 담은채로 On-flight 상태가 된다. 나는 Reply 버튼만 누르면 된다. 
+
+로그인을 안하면 다음과 같이 뜬다.
+
+![image](https://github.com/user-attachments/assets/514d63a3-535b-4238-9812-9eb69c336974)
 
