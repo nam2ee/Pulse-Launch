@@ -145,3 +145,22 @@ export NVM_DIR="$HOME/.nvm"
 
 
 ### 3. Next.js 실행하기 
+
+작업 디렉토리에서 
+`git clone https://github.com/nam2ee/Pulse-Launch.git`를 수행한 뒤,
+`cd Pulse-Launch`를 통해서 프로젝트 디렉토리로 넘어간다. 
+
+이후 해당 위치에서, 
+`npm install`을 통해 의존성 패키지를 전부 다운받는다(위에서 NVM을 통해서 node version이 23.9.0 인것을 ensure.) 
+
+의존성이 다 설치가 되면, 그 후에 
+
+`npm run dev`를 통해 Next.js를 실행한다.
+
+실행한 후, 사용하는 브라우저를 통해서 주소창에 `localhost:3000`를 치고 들어간다. (주의: 이 때, 컴파일이 시작되는데, 조금 시간이 오래걸릴 수 있음) 
+
+그렇게 되면 다음과 같은 화면이 나온다. (좌측 하단에 있는 것은 로컬에서 돌려서 발생하는 오류이므로 무시하면 된다.)
+
+![image](https://github.com/user-attachments/assets/425d4123-bf90-429b-9c2a-66958d704b8a)
+![image](https://github.com/user-attachments/assets/425d4123-bf90-429b-9c2a-66958d704b8a)
+
