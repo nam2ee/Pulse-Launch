@@ -6,12 +6,6 @@ Project는 랜딩페이지, Technical product (Core 기능 있음), Launching pa
 총 3개인데, 성과물로 볼만한 것은 Launching Page이므로 (왜냐하면 실제로 런칭을 하고 반응을 봐왔고, 보았음. 추가적으로 기말발표 때 '직접' 시연한 부분이기도 함.  
 + 코어 기능이 복잡하지 않고 Viral에 특화되어있음. - 코어 기능은 0. 지갑 연동 하고 게시물 쓰기 1. 트위터 intent를 통한 자동 리포스팅 2. 타이머 리로딩을 통한 게이미피케이션) 
 
-
-### git clone
-작업 폴더를 하나 만들고, 
-그 안에서 git clone `?`
-그리고 `cd Pulse-Launch`
-
 ## 실행 방법
 
 ### 1. Phantom wallet 설치 
